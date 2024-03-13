@@ -1,0 +1,110 @@
+.music-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.text {
+  color: #98e7fd;
+}
+
+.pause-button {
+  background-image: url("Pause1.png");
+}
+
+.resume-button {
+  background-image: url("Play.png");
+}
+
+.next-button {
+  background-image: url("Next.png");
+}
+
+.search-button:hover,
+.play-button:hover {
+  transition: 0.5s;
+  background-color: #ffffff;
+}
+
+.pause-button,
+.resume-button,
+.next-button {
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10%;
+}
+
+.music-player {
+  background-color: #1e1e24;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 60%;
+}
+
+.music-player h2 {
+  color: #61dafb;
+  margin-bottom: 20px;
+}
+
+.music-player input[type="text"] {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #61dafb;
+  border-radius: 5px;
+  background-color: #1e1e24;
+  color: #61dafb;
+}
+
+.music-player input[type="text"]::placeholder {
+  color: #61dafb;
+}
+
+.music-player input[type="text"]:focus {
+  outline: none;
+}
+
+.play-button,
+.search-button {
+  background-color: #61dafb;
+}
+
+.music-player button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #1e1e24;
+  cursor: pointer;
+}
+
+.music-player ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.music-player ul li {
+  margin-bottom: 10px;
+}
+
+.music-player ul li span {
+  color: #61dafb;
+}
+
+.music-player .control-buttons button {
+  margin: 0 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.music-player .control-buttons button:hover {
+  color: #ffffff;
+}

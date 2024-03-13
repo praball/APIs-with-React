@@ -1,0 +1,121 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  transition: background-color 0.3s, color 0.3s; /* Add transition for smoother color change */
+}
+
+.app-container.dark-mode {
+  background-color: #93ceff;
+  color: #fff;
+}
+
+.dark-mode-toggle {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  padding: 5px 10px;
+  background-color: #61dafb;
+  color: #fff;
+  border: none;
+  border-radius: 4rem;
+  cursor: pointer;
+}
+
+/* Adjust styles for light mode */
+.app-container.light-mode {
+  background-color: #35424a; /* Slightly Lighter Blue Background */
+  color: #61dafb; /* React Blue Text Color */
+}
+
+.button {
+  background-color: #4a4e69; /* React Blue Button Background */
+  color: #fff; /* White Text Color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #4fa3d1; /* Slightly Darker Blue on Hover */
+}
+
+.inputField {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  background-color: #35424a; /* Match the background color of the container */
+  color: #61dafb;
+}
+
+.inputField::placeholder {
+  color: #999;
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  /* background-color: #282c34;  */
+  color: #61dafb; /* React Blue Text Color */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.weather.dark-mode {
+  /* Dark mode styles */
+  background-color: #333;
+  color: #61dafb;
+}
+
+.weather.light-mode {
+  /* Light mode styles */
+  background-color: #35424a;
+  color: #61dafb;
+}
+
+.weather h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.weatherHeading {
+  color: #61dafb;
+}
+
+.weatherHeading.light-mode {
+  color: #1e1e2a;
+}
+
+.weatherTable {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #1e1e2a; /* Darker Blue Table Background */
+}
+
+.weatherTable th, .weatherTable td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #4a4e69; /* Slightly Lighter Blue Border */
+}
+
+.weatherTable th {
+  background-color: #282c34; /* Dark Blue Header Background */
+  font-weight: bold;
+}
+
+.weatherTable tbody tr:hover {
+  background-color: #2e303e; /* Hover Background Color */
+  transition: background-color 0.3s ease;
+}
